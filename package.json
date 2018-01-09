@@ -16,7 +16,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://code.sdsdev.co.kr/pages/Yooseong/movie_app",
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }
