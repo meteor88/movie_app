@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import Movie from "./Movie";
 
+const apikey = 'cbe579c7';
+const search_keyword = 'fast';
+
 class App extends Component {
   state = {}
 
@@ -19,7 +22,7 @@ class App extends Component {
   }
 
   _callApi = () => {
-    return fetch('http://www.omdbapi.com/?s=fast&apikey=BanMePlz')
+    return fetch(`http://www.omdbapi.com/?s=${search_keyword}&apikey=${apikey}`)
       .then(response => response.json())
       .then(json => json)
       .catch(err => console.log(err));
